@@ -14,7 +14,7 @@
         android:id="@+id/textView"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:textColor="#B28D4F" />
+        android:textColor="#0B7000" />
 
     <Button
         android:layout_width="wrap_content"
@@ -28,8 +28,8 @@
         android:layout_alignLeft="@+id/textView"
         android:layout_alignStart="@+id/textView"
         android:onClick="createToast"
-        android:textColor="#A4D2FF"
-        android:background="#618AB2" />
+        android:textColor="#FFFFFF"
+        android:background="#0B7000" />
 
     <Button
         android:layout_width="wrap_content"
@@ -43,8 +43,8 @@
         android:layout_alignLeft="@+id/button"
         android:layout_alignStart="@+id/button"
         android:onClick="createToast"
-        android:textColor="#A4D2FF"
-        android:background="#618AB2" />
+        android:textColor="#FFFFFF"
+        android:background="#0B7000" />
 
     <Button
         android:layout_width="wrap_content"
@@ -58,8 +58,8 @@
         android:layout_alignLeft="@+id/button3"
         android:layout_alignStart="@+id/button3"
         android:onClick="createToast"
-        android:textColor="#A4D2FF"
-        android:background="#618AB2" />
+        android:textColor="#FFFFFF"
+        android:background="#0B7000" />
 
 
     <Button
@@ -74,8 +74,8 @@
         android:layout_alignLeft="@+id/button4"
         android:layout_alignStart="@+id/button4"
         android:onClick="createToast"
-        android:textColor="#A4D2FF"
-        android:background="#618AB2" />
+        android:textColor="#FFFFFF"
+        android:background="#0B7000" />
 
     <Button
         android:layout_width="wrap_content"
@@ -89,8 +89,8 @@
         android:layout_alignLeft="@+id/button5"
         android:layout_alignStart="@+id/button5"
         android:onClick="createToast"
-        android:textColor="#A4D2FF"
-        android:background="#618AB2" />
+        android:textColor="#FFFFFF"
+        android:background="#0B7000" />
 
     <Button
         android:layout_width="wrap_content"
@@ -104,6 +104,6 @@
         android:layout_alignRight="@+id/button6"
         android:layout_alignEnd="@+id/button6"
         android:onClick="createToast"
-        android:textColor="#A4D2FF"
-        android:background="#618AB2" />
+        android:textColor="#FFFFFF"
+        android:background="#0B7000" />
 </RelativeLayout>
