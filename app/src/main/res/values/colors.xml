@@ -1,3 +1,7 @@
 <resources>
         <color name="ActionBarColor">#0B7000</color>
+        <color name="BackgroundColor">#F5F5F5</color>
+        <color name="MainTitle">#0B7000</color>
+        <color name="ButtonText">#FFFFFF</color>
+        <color name="ButtonBackground">#0B7000</color>
 </resources>
