@@ -10,10 +10,25 @@ import android.content.Context;
 import android.widget.Button;
 import android.widget.Toast;
 
+import butterknife.Bind;
+
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
 
     private final String LOG_TAG = MainActivity.class.getSimpleName();
+
+    @Bind(R.id.spotifyButton)
+    Button spotifyButton;
+    @Bind(R.id.scoresButton)
+    Button scoresButton;
+    @Bind(R.id.libraryButton)
+    Button libraryButton;
+    @Bind(R.id.buildItButton)
+    Button buildItButton;
+    @Bind(R.id.xyzButton)
+    Button xyzButton;
+    @Bind(R.id.capstoneButton)
+    Button capstoneButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -46,7 +61,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     @Override
     public void onClick(View view) {
         switch (view.getId()) {
-            case R.id.button:
+            case R.id.spotifyButton:
                 Log.d(LOG_TAG, "Spotify");
                 createToast(view);
                 break;
