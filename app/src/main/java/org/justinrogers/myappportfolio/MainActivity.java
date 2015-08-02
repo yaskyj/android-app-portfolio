@@ -3,14 +3,17 @@ package org.justinrogers.myappportfolio;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.content.Context;
+import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.Toast;
 
 import butterknife.Bind;
+import butterknife.ButterKnife;
 
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener{
@@ -34,6 +37,15 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+        ButterKnife.bind(this);
+
+        spotifyButton.setOnClickListener(this);
+        scoresButton.setOnClickListener(this);
+        libraryButton.setOnClickListener(this);
+        buildItButton.setOnClickListener(this);
+        xyzButton.setOnClickListener(this);
+        capstoneButton.setOnClickListener(this);
+
     }
 
     @Override
@@ -62,8 +74,24 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.spotifyButton:
-                Log.d(LOG_TAG, "Spotify");
                 createToast(view);
+                break;
+            case R.id.scoresButton:
+                createToast(view);
+                break;
+            case R.id.libraryButton:
+                createToast(view);
+                break;
+            case R.id.buildItButton:
+                createToast(view);
+                break;
+            case R.id.xyzButton:
+                createToast(view);
+                break;
+            case R.id.capstoneButton:
+                createToast(view);
+                break;
+            default:
                 break;
         }
     }
