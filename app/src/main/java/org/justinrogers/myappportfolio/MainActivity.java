@@ -1,5 +1,6 @@
 package org.justinrogers.myappportfolio;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -74,7 +75,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     public void onClick(View view) {
         switch (view.getId()) {
             case R.id.spotifyButton:
-                createToast(view);
+                Intent launchIntent = getPackageManager().getLaunchIntentForPackage("org.justinrogers.spotifystreamer");
+                startActivity(launchIntent);
                 break;
             case R.id.scoresButton:
                 createToast(view);
